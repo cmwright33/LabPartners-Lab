@@ -12,3 +12,6 @@ group_size = rand(1..1 + num_of_students)         # sets the group size between 
 students.each_slice(group_size){|slice| p slice}  # iterates over the array
                                                   # slices the array by the group size then
                                                   # prints the slice
+
+#students.each_slice(group_size).with_index{|slice, i| p slice, i
+# if group_size > slice.last
